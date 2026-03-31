@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "FBLA Central",
+    "slug": "fbla-central",
+    "scheme": "fblacentral",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#08111e"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#08111e"
+      }
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "appMode": "demo"
+    }
+  }
+}
