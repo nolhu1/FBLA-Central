@@ -19,5 +19,6 @@ export const HAS_FIREBASE_CONFIG = Object.values(FIREBASE_CONFIG).every(Boolean)
 
 export const STORAGE_KEYS = {
   session: "fbla-central/session",
-  demoState: "fbla-central/demo-state"
+  demoState: "fbla-central/demo-state",
+  demoSeedSignature: "fbla-central/demo-seed-signature"
 } as const;

@@ -16,10 +16,11 @@ export const SectionHeader = ({ title, caption }: SectionHeaderProps) => (
 
 const styles = StyleSheet.create({
   wrapper: {
-    gap: 4
+    gap: 3
   },
   title: {
     ...theme.typography.title,
+    fontSize: 18,
     color: palette.cream
   },
   caption: {

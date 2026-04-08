@@ -342,7 +342,7 @@ export interface AIMessage {
   id: string;
   role: "user" | "assistant" | "system";
   content: string;
-  sourceLinks: Array<{ label: string; type: SavedItemType | "event" | "news_post"; id: string }>;
+  sourceLinks: { label: string; type: SavedItemType | "event" | "news_post"; id: string }[];
   createdAt: string;
 }
 

@@ -22,10 +22,10 @@ export const palette = {
 export const theme = {
   spacing: {
     xs: 6,
-    sm: 10,
+    sm: 8,
     md: 16,
-    lg: 20,
-    xl: 28,
+    lg: 18,
+    xl: 24,
     xxl: 36
   },
   radius: {
@@ -38,22 +38,26 @@ export const theme = {
     display: {
       fontFamily: "Avenir Next",
       fontSize: 28,
-      fontWeight: "700" as const
+      fontWeight: "700" as const,
+      lineHeight: 32
     },
     title: {
       fontFamily: "Avenir Next",
       fontSize: 20,
-      fontWeight: "700" as const
+      fontWeight: "700" as const,
+      lineHeight: 24
     },
     body: {
       fontFamily: "System",
       fontSize: 15,
-      fontWeight: "400" as const
+      fontWeight: "400" as const,
+      lineHeight: 21
     },
     label: {
       fontFamily: "System",
       fontSize: 12,
       fontWeight: "600" as const,
+      lineHeight: 15,
       letterSpacing: 0.3
     }
   },

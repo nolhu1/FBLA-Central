@@ -2,13 +2,13 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Ionicons } from "@expo/vector-icons";
-import { ActivityIndicator, Pressable, Text } from "react-native";
+import { ActivityIndicator, Pressable } from "react-native";
+import { useEffect } from "react";
 
-import { APP_MODE_LABEL } from "@/constants/config";
-import { useAppSelector } from "@/store/hooks";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { palette } from "@/theme";
-import { useAppDispatch } from "@/store/hooks";
 import { useRestoreSessionQuery } from "@/store/services/fblaApi";
+import { AppLogoMark } from "@/components/branding/AppLogoMark";
 
 import { SignInScreen } from "@/screens/auth/SignInScreen";
 import { OnboardingScreen } from "@/screens/auth/OnboardingScreen";
@@ -16,15 +16,26 @@ import { HomeScreen } from "@/screens/home/HomeScreen";
 import { EventsScreen } from "@/screens/events/EventsScreen";
 import { EventDetailScreen } from "@/screens/events/EventDetailScreen";
 import { ResourcesScreen } from "@/screens/resources/ResourcesScreen";
+import { ResourceDetailScreen } from "@/screens/resources/ResourceDetailScreen";
+import { PdfViewerScreen } from "@/screens/resources/PdfViewerScreen";
 import { NewsScreen } from "@/screens/news/NewsScreen";
+import { NewsDetailScreen } from "@/screens/news/NewsDetailScreen";
 import { SocialHubScreen } from "@/screens/social/SocialHubScreen";
 import { StudyScreen } from "@/screens/study/StudyScreen";
+import { StudyTrackDetailScreen } from "@/screens/study/StudyTrackDetailScreen";
+import { StudyPracticeBrowserScreen } from "@/screens/study/StudyPracticeBrowserScreen";
+import { StudyPracticeDetailScreen } from "@/screens/study/StudyPracticeDetailScreen";
+import { FlashcardPracticeScreen } from "@/screens/study/FlashcardPracticeScreen";
+import { QuizPracticeScreen } from "@/screens/study/QuizPracticeScreen";
 import { CommunityScreen } from "@/screens/community/CommunityScreen";
+import { CommunityThreadListScreen } from "@/screens/community/CommunityThreadListScreen";
+import { CreateThreadScreen } from "@/screens/community/CreateThreadScreen";
 import { ThreadDetailScreen } from "@/screens/community/ThreadDetailScreen";
 import { ProfileScreen } from "@/screens/profile/ProfileScreen";
+import { PreferencesScreen } from "@/screens/profile/PreferencesScreen";
+import { EditProfileScreen } from "@/screens/profile/EditProfileScreen";
 import { AIScreen } from "@/screens/ai/AIScreen";
 import { SearchScreen } from "@/screens/search/SearchScreen";
-import { useEffect } from "react";
 import { setBootstrapped, setUser } from "@/store/slices/sessionSlice";
 
 const RootStack = createNativeStackNavigator();
@@ -46,9 +57,11 @@ const appTheme = {
 const MainTabs = () => (
   <Tabs.Navigator
     screenOptions={({ route, navigation }) => ({
+      animation: "fade",
       headerStyle: { backgroundColor: palette.ink },
       headerTintColor: palette.cream,
       headerShadowVisible: false,
+      headerTitle: "FBLA Central",
       tabBarStyle: {
         backgroundColor: "#08111e",
         borderTopColor: "rgba(255,255,255,0.08)",
@@ -72,14 +85,10 @@ const MainTabs = () => (
           <Ionicons name="search-outline" size={22} color={palette.cream} />
         </Pressable>
       ),
-      headerLeft: () => (
-        <Pressable onPress={() => navigation.navigate("AI" as never)} style={{ paddingHorizontal: 8 }}>
-          <Text style={{ color: palette.sky, fontWeight: "700" }}>AI</Text>
-        </Pressable>
-      )
+      headerLeft: () => <AppLogoMark />
     })}
   >
-    <Tabs.Screen name="Home" component={HomeScreen} options={{ headerTitle: APP_MODE_LABEL + " Mode" }} />
+    <Tabs.Screen name="Home" component={HomeScreen} />
     <Tabs.Screen name="Events" component={EventsScreen} />
     <Tabs.Screen name="Study" component={StudyScreen} />
     <Tabs.Screen name="Community" component={CommunityScreen} />
@@ -106,7 +115,13 @@ export const RootNavigator = () => {
 
   return (
     <NavigationContainer theme={appTheme}>
-      <RootStack.Navigator screenOptions={{ headerShown: false }}>
+      <RootStack.Navigator
+        screenOptions={{
+          headerShown: false,
+          animation: "fade_from_bottom",
+          contentStyle: { backgroundColor: palette.ink }
+        }}
+      >
         {!user ? (
           <RootStack.Screen name="SignIn" component={SignInScreen} />
         ) : !user.onboardingComplete ? (
@@ -116,11 +131,23 @@ export const RootNavigator = () => {
             <RootStack.Screen name="MainTabs" component={MainTabs} />
             <RootStack.Screen name="EventDetail" component={EventDetailScreen} />
             <RootStack.Screen name="Resources" component={ResourcesScreen} />
+            <RootStack.Screen name="ResourceDetail" component={ResourceDetailScreen} />
+            <RootStack.Screen name="PdfViewer" component={PdfViewerScreen} />
             <RootStack.Screen name="News" component={NewsScreen} />
+            <RootStack.Screen name="NewsDetail" component={NewsDetailScreen} />
             <RootStack.Screen name="SocialHub" component={SocialHubScreen} />
             <RootStack.Screen name="AI" component={AIScreen} />
             <RootStack.Screen name="Search" component={SearchScreen} />
+            <RootStack.Screen name="StudyTrackDetail" component={StudyTrackDetailScreen} />
+            <RootStack.Screen name="StudyPracticeBrowser" component={StudyPracticeBrowserScreen} />
+            <RootStack.Screen name="StudyPracticeDetail" component={StudyPracticeDetailScreen} />
+            <RootStack.Screen name="FlashcardPractice" component={FlashcardPracticeScreen} />
+            <RootStack.Screen name="QuizPractice" component={QuizPracticeScreen} />
+            <RootStack.Screen name="CommunityThreadList" component={CommunityThreadListScreen} />
+            <RootStack.Screen name="CreateThread" component={CreateThreadScreen} />
             <RootStack.Screen name="ThreadDetail" component={ThreadDetailScreen} />
+            <RootStack.Screen name="Preferences" component={PreferencesScreen} />
+            <RootStack.Screen name="EditProfile" component={EditProfileScreen} />
           </>
         )}
       </RootStack.Navigator>

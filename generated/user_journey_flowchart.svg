@@ -1,0 +1,365 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2440" height="1700" viewBox="0 0 2440 1700">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs>
+  <marker id="arrow-primary" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+    <path d="M1,1 L13,7 L1,13 z" fill="#2563eb" />
+  </marker>
+  <marker id="arrow-secondary" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+    <path d="M1,1 L13,7 L1,13 z" fill="#94a3b8" />
+  </marker>
+  <marker id="arrow-loop" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+    <path d="M1,1 L13,7 L1,13 z" fill="#db2777" />
+  </marker>
+  <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#cbd5e1" flood-opacity="0.45"/>
+  </filter>
+</defs>
+<line x1="0" y1="0" x2="0" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="80" y1="0" x2="80" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="160" y1="0" x2="160" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="240" y1="0" x2="240" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="320" y1="0" x2="320" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="400" y1="0" x2="400" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="480" y1="0" x2="480" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="560" y1="0" x2="560" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="640" y1="0" x2="640" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="720" y1="0" x2="720" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="800" y1="0" x2="800" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="880" y1="0" x2="880" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="960" y1="0" x2="960" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1040" y1="0" x2="1040" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1120" y1="0" x2="1120" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1200" y1="0" x2="1200" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1280" y1="0" x2="1280" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1360" y1="0" x2="1360" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1440" y1="0" x2="1440" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1520" y1="0" x2="1520" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1600" y1="0" x2="1600" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1680" y1="0" x2="1680" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1760" y1="0" x2="1760" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1840" y1="0" x2="1840" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="1920" y1="0" x2="1920" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="2000" y1="0" x2="2000" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="2080" y1="0" x2="2080" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="2160" y1="0" x2="2160" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="2240" y1="0" x2="2240" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="2320" y1="0" x2="2320" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="2400" y1="0" x2="2400" y2="1700" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="0" x2="2440" y2="0" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="80" x2="2440" y2="80" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="160" x2="2440" y2="160" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="240" x2="2440" y2="240" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="320" x2="2440" y2="320" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="400" x2="2440" y2="400" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="480" x2="2440" y2="480" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="560" x2="2440" y2="560" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="640" x2="2440" y2="640" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="720" x2="2440" y2="720" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="800" x2="2440" y2="800" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="880" x2="2440" y2="880" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="960" x2="2440" y2="960" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1040" x2="2440" y2="1040" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1120" x2="2440" y2="1120" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1200" x2="2440" y2="1200" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1280" x2="2440" y2="1280" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1360" x2="2440" y2="1360" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1440" x2="2440" y2="1440" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1520" x2="2440" y2="1520" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1600" x2="2440" y2="1600" stroke="#eef2f7" stroke-width="1"/>
+<line x1="0" y1="1680" x2="2440" y2="1680" stroke="#eef2f7" stroke-width="1"/>
+<text x="90" y="56" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#0f172a">
+  FBLA Central Full User Journey Flow
+</text>
+<text x="90" y="88" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#64748b">
+  Auth, onboarding, core tabs, cross-feature navigation, and retention loops shown on a white background
+</text>
+<g transform="translate(1830, 80)">
+<rect x="0" y="0" rx="22" ry="22" width="500" height="300" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="24" y="38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Legend</text>
+<rect x="24" y="74" rx="12" ry="12" width="42" height="28" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+<text x="82" y="94" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Entry / gate</text>
+<rect x="24" y="116" rx="12" ry="12" width="42" height="28" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+<text x="82" y="136" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Primary hub</text>
+<rect x="24" y="158" rx="12" ry="12" width="42" height="28" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="82" y="178" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Feature screen</text>
+<rect x="24" y="200" rx="12" ry="12" width="42" height="28" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+<text x="82" y="220" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Detail / deep dive</text>
+<rect x="24" y="242" rx="12" ry="12" width="42" height="28" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+<text x="82" y="262" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Action / retention loop</text>
+<line x1="26" y1="290" x2="66" y2="290" stroke="#2563eb" stroke-width="3"/>
+<text x="82" y="296" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Primary navigation / main action</text>
+<line x1="26" y1="332" x2="66" y2="332" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 8"/>
+<text x="82" y="338" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Secondary connected experience</text>
+<line x1="26" y1="374" x2="66" y2="374" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="82" y="380" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Retention / personalization loop</text>
+</g>
+<path d="M 215.0 189 L 215.0 223 L 215.0 223 L 215.0 255" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="213.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">No session</text>
+<path d="M 215.0 189 L 215.0 223 L 215.0 223 L 215.0 445" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="213.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Signed in, incomplete</text>
+<path d="M 215.0 189 L 215.0 223 L 215.0 223 L 215.0 655" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="213.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Returning member</text>
+<path d="M 215.0 359 L 215.0 393 L 215.0 393 L 215.0 445" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="383.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">First-time / incomplete</text>
+<path d="M 215.0 359 L 215.0 393 L 215.0 393 L 215.0 655" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="383.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Authenticated member</text>
+<path d="M 215.0 549 L 215.0 583 L 215.0 583 L 215.0 655" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="573.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Complete profile</text>
+<path d="M 340 707.0 C 380 707.0, 380 182.0, 420 182.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="380.0" y="432.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Default tab</text>
+<path d="M 340 707.0 C 380 707.0, 380 397.0, 420 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="380.0" y="540.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Tab</text>
+<path d="M 340 707.0 C 380 707.0, 380 612.0, 420 612.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="380.0" y="647.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Tab</text>
+<path d="M 340 707.0 C 380 707.0, 380 827.0, 420 827.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="380.0" y="755.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Tab</text>
+<path d="M 340 707.0 C 380 707.0, 380 1042.0, 420 1042.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="380.0" y="862.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Tab</text>
+<path d="M 215.0 759 L 215.0 793 L 215.0 793 L 215.0 855" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="215.0" y="783.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Header search</text>
+<path d="M 670 182.0 C 715.0 182.0, 715.0 182.0, 760 182.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="170.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Notifications</text>
+<path d="M 670 182.0 C 715.0 182.0, 715.0 612.0, 760 612.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="385.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Ask AI</text>
+<path d="M 545.0 234 L 545.0 268 L 545.0 268 L 545.0 990" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="545.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Avatar</text>
+<path d="M 545.0 234 L 545.0 268 L 545.0 268 L 545.0 345" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="545.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Quick action</text>
+<path d="M 545.0 234 L 545.0 268 L 545.0 268 L 545.0 560" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="545.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Quick action</text>
+<path d="M 670 182.0 C 715.0 182.0, 715.0 397.0, 760 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="277.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Quick action</text>
+<path d="M 545.0 234 L 545.0 268 L 545.0 268 L 545.0 1205" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="545.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Highlight</text>
+<path d="M 670 182.0 C 715.0 182.0, 715.0 827.0, 760 827.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="492.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Hero / priority</text>
+<path d="M 670 182.0 C 715.0 182.0, 715.0 1257.0, 760 1257.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="707.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Momentum / discussion</text>
+<path d="M 670 397.0 C 715.0 397.0, 715.0 827.0, 760 827.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="600.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Open event</text>
+<path d="M 670 612.0 C 715.0 612.0, 715.0 1042.0, 760 1042.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="815.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Continue or recommended track</text>
+<path d="M 670 827.0 C 715.0 827.0, 715.0 1257.0, 760 1257.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="1030.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Open featured/recommended thread</text>
+<path d="M 670 827.0 C 770 827.0, 1000 827.0, 1100 827.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="815.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Browse category</text>
+<path d="M 670 827.0 C 770 827.0, 1000 1042.0, 1100 1042.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="922.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Ask question</text>
+<path d="M 670 1042.0 C 770 1042.0, 1000 1257.0, 1100 1257.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1137.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Edit</text>
+<path d="M 670 1042.0 C 770 1042.0, 1000 1472.0, 1100 1472.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1245.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Settings</text>
+<path d="M 340 907.0 C 440 907.0, 660 827.0, 760 827.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="550.0" y="855.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Event result</text>
+<path d="M 340 907.0 C 440 907.0, 1000 397.0, 1100 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="720.0" y="640.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Resource result</text>
+<path d="M 340 907.0 C 440 907.0, 1000 182.0, 1100 182.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="720.0" y="532.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">News result</text>
+<path d="M 340 907.0 C 440 907.0, 660 1042.0, 760 1042.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="550.0" y="962.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Study result</text>
+<path d="M 340 907.0 C 440 907.0, 660 1257.0, 760 1257.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="550.0" y="1070.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Thread result</text>
+<path d="M 1010 182.0 C 1055.0 182.0, 1055.0 182.0, 1100 182.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="170.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Open update</text>
+<path d="M 1010 397.0 C 1055.0 397.0, 1055.0 397.0, 1100 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="385.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Open resource</text>
+<path d="M 1010 827.0 C 1055.0 827.0, 1055.0 182.0, 1100 182.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="492.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Linked announcements</text>
+<path d="M 1010 827.0 C 1055.0 827.0, 1055.0 397.0, 1100 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="600.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Related resources</text>
+<path d="M 885.0 879 L 885.0 913 L 885.0 913 L 885.0 990" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="903.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Study help</text>
+<path d="M 885.0 879 L 885.0 913 L 885.0 913 L 885.0 1205" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="903.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Discussion</text>
+<path d="M 885.0 879 L 885.0 913 L 885.0 913 L 885.0 560" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="903.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Context AI</text>
+<path d="M 1010 1042.0 C 1055.0 1042.0, 1055.0 397.0, 1100 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="707.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Related resources</text>
+<path d="M 885.0 1094 L 885.0 1128 L 885.0 1128 L 885.0 560" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1118.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Turn into plan</text>
+<path d="M 885.0 1309 L 885.0 1343 L 885.0 1343 L 885.0 775" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1333.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Linked event</text>
+<path d="M 1010 1257.0 C 1055.0 1257.0, 1055.0 397.0, 1100 397.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="815.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Linked resource</text>
+<path d="M 885.0 1309 L 885.0 1343 L 885.0 1343 L 885.0 990" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1333.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Linked study</text>
+<path d="M 1225.0 449 L 1225.0 483 L 1225.0 483 L 1225.0 560" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1225.0" y="473.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Open PDF/document</text>
+<path d="M 1225.0 449 L 1225.0 483 L 885.0 483 L 885.0 990" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="473.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Use in study</text>
+<path d="M 1225.0 449 L 1225.0 483 L 1225.0 483 L 1225.0 130" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1225.0" y="473.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Related updates</text>
+<path d="M 1225.0 449 L 1225.0 483 L 885.0 483 L 885.0 775" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="473.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Useful for</text>
+<path d="M 1225.0 234 L 1225.0 268 L 885.0 268 L 885.0 775" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Related event</text>
+<path d="M 1225.0 234 L 1225.0 268 L 1225.0 268 L 1225.0 345" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1225.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Related resource</text>
+<path d="M 1225.0 234 L 1225.0 268 L 885.0 268 L 885.0 1205" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Related thread</text>
+<path d="M 1225.0 234 L 1225.0 268 L 885.0 268 L 885.0 560" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Ask AI</text>
+<path d="M 670 1257.0 C 715.0 1257.0, 715.0 827.0, 760 827.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="715.0" y="1030.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Linked spotlight</text>
+<path d="M 670 1257.0 C 770 1257.0, 1000 182.0, 1100 182.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="707.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Linked highlight</text>
+<path d="M 1225.0 879 L 1225.0 913 L 885.0 913 L 885.0 1205" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="903.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Open thread</text>
+<path d="M 1225.0 1094 L 1225.0 1128 L 885.0 1128 L 885.0 1205" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1055.0" y="1118.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">New post</text>
+<path d="M 1225.0 1309 L 1225.0 1343 L 545.0 1343 L 545.0 990" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1333.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Return</text>
+<path d="M 1225.0 1524 L 1225.0 1558 L 545.0 1558 L 545.0 990" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="885.0" y="1548.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Return</text>
+<path d="M 1010 827.0 C 1110 827.0, 1410 232.0, 1510 232.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1260.0" y="517.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Save + reminders</text>
+<path d="M 1350 397.0 C 1430.0 397.0, 1430.0 232.0, 1510 232.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1430.0" y="302.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Save for later</text>
+<path d="M 1350 182.0 C 1430.0 182.0, 1430.0 232.0, 1510 232.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1430.0" y="195.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Save / mark read</text>
+<path d="M 1010 827.0 C 1110 827.0, 1410 477.0, 1510 477.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1260.0" y="640.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Prep branching</text>
+<path d="M 1350 397.0 C 1430.0 397.0, 1430.0 477.0, 1510 477.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1430.0" y="425.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Study support</text>
+<path d="M 1010 1042.0 C 1110 1042.0, 1410 477.0, 1510 477.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1260.0" y="747.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Continue prep</text>
+<path d="M 1010 612.0 C 1110 612.0, 1410 477.0, 1510 477.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1260.0" y="532.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Guided plan</text>
+<path d="M 670 827.0 C 770 827.0, 1410 722.0, 1510 722.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1090.0" y="762.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Ask / browse</text>
+<path d="M 1010 1257.0 C 1110 1257.0, 1410 722.0, 1510 722.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1260.0" y="977.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Reply / follow</text>
+<path d="M 1350 1042.0 C 1430.0 1042.0, 1430.0 722.0, 1510 722.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1430.0" y="870.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Start discussion</text>
+<path d="M 1635.0 284 L 1635.0 318 L 1635.0 318 L 1635.0 915" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1635.0" y="308.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Pinned items</text>
+<path d="M 1635.0 529 L 1635.0 563 L 1635.0 563 L 1635.0 915" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1635.0" y="553.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Resume prep</text>
+<path d="M 1635.0 774 L 1635.0 808 L 1635.0 808 L 1635.0 915" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1635.0" y="798.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Active participation</text>
+<path d="M 670 1042.0 C 770 1042.0, 1410 1212.0, 1510 1212.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1090.0" y="1115.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Identity / settings</text>
+<path d="M 1350 1257.0 C 1430.0 1257.0, 1430.0 1212.0, 1510 1212.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1430.0" y="1222.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Update interests</text>
+<path d="M 1350 1472.0 C 1430.0 1472.0, 1430.0 1212.0, 1510 1212.0" fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" opacity="0.96"/>
+<text x="1430.0" y="1330.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Tune alerts</text>
+<path d="M 1635.0 1264 L 1635.0 1298 L 1635.0 1298 L 1635.0 915" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1635.0" y="1288.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Better personalization</text>
+<path d="M 1760 967.0 C 1800 967.0, 1800 632.0, 1840 632.0" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-primary)" opacity="0.96"/>
+<text x="1800.0" y="787.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Member keeps returning</text>
+<path d="M 340 707.0 C 440 707.0, 1740 632.0, 1840 632.0" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 8" marker-end="url(#arrow-secondary)" opacity="0.96"/>
+<text x="1090.0" y="657.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Connected app system</text>
+<path d="M 1010 612.0 C 1110 612.0, 1740 632.0, 1840 632.0" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 8" marker-end="url(#arrow-secondary)" opacity="0.96"/>
+<text x="1425.0" y="610.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Support anywhere</text>
+<path d="M 670 1257.0 C 770 1257.0, 1740 632.0, 1840 632.0" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 8" marker-end="url(#arrow-secondary)" opacity="0.96"/>
+<text x="1255.0" y="932.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b" font-weight="600">Beyond utility</text>
+<rect x="90" y="85" rx="24" ry="24" width="250" height="104" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="108" y="119" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">App Launch</text>
+<text x="108" y="147" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Restore session and route user</text>
+<rect x="90" y="255" rx="24" ry="24" width="250" height="104" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="108" y="289" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Sign In</text>
+<text x="108" y="317" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Demo or production</text>
+<text x="108" y="335" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">authentication</text>
+<rect x="90" y="445" rx="24" ry="24" width="250" height="104" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="108" y="479" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Onboarding</text>
+<text x="108" y="507" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Organization, basics, interests,</text>
+<text x="108" y="525" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">alerts</text>
+<rect x="90" y="655" rx="24" ry="24" width="250" height="104" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="108" y="689" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Main Tabs</text>
+<text x="108" y="717" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Home, Events, Study, Community,</text>
+<text x="108" y="735" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Profile</text>
+<rect x="90" y="855" rx="24" ry="24" width="250" height="104" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="108" y="889" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Unified Search</text>
+<text x="108" y="917" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Cross-feature jump into detail</text>
+<text x="108" y="935" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">screens</text>
+<rect x="420" y="130" rx="24" ry="24" width="250" height="104" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="438" y="164" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Home</text>
+<text x="438" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Priority hero, quick actions,</text>
+<text x="438" y="210" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">momentum</text>
+<rect x="420" y="345" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="438" y="379" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Events</text>
+<text x="438" y="407" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Calendar, agenda, saved schedule</text>
+<rect x="420" y="560" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="438" y="594" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Study</text>
+<text x="438" y="622" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Overview, practice, progress,</text>
+<text x="438" y="640" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">review</text>
+<rect x="420" y="775" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="438" y="809" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Community</text>
+<text x="438" y="837" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Browse topics, featured threads,</text>
+<text x="438" y="855" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">ask</text>
+<rect x="420" y="990" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="438" y="1024" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Profile</text>
+<text x="438" y="1052" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Identity, activity, settings</text>
+<rect x="420" y="1205" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="438" y="1239" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Social Hub</text>
+<text x="438" y="1267" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Official channels and highlights</text>
+<rect x="760" y="130" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="778" y="164" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">News</text>
+<text x="778" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Chapter/state/national updates</text>
+<rect x="760" y="345" rx="24" ry="24" width="250" height="104" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="778" y="379" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Resources</text>
+<text x="778" y="407" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Library, filters, saved docs</text>
+<rect x="760" y="560" rx="24" ry="24" width="250" height="104" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="778" y="594" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">FBLA AI</text>
+<text x="778" y="622" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Context-aware assistant across</text>
+<text x="778" y="640" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">the app</text>
+<rect x="760" y="775" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="778" y="809" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Event Detail</text>
+<text x="778" y="837" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Overview, prep, discussion,</text>
+<text x="778" y="855" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">reminders</text>
+<rect x="760" y="990" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="778" y="1024" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Study Track Detail</text>
+<text x="778" y="1052" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Units, progress, linked</text>
+<text x="778" y="1070" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">resources</text>
+<rect x="760" y="1205" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="778" y="1239" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Thread Detail</text>
+<text x="778" y="1267" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Replies, linked context, sibling</text>
+<text x="778" y="1285" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">threads</text>
+<rect x="1100" y="130" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="164" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">News Detail</text>
+<text x="1118" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Full update plus related content</text>
+<rect x="1100" y="345" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="379" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Resource Detail</text>
+<text x="1118" y="407" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Open, save, share, related items</text>
+<rect x="1100" y="560" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="594" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">PDF Viewer</text>
+<text x="1118" y="622" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Read local or linked documents</text>
+<rect x="1100" y="775" rx="24" ry="24" width="250" height="104" fill="#fefce8" stroke="#ca8a04" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="809" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Thread List</text>
+<text x="1118" y="837" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Category-specific discussion</text>
+<text x="1118" y="855" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">list</text>
+<rect x="1100" y="990" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="1024" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Create Thread</text>
+<text x="1118" y="1052" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Post a new question or</text>
+<text x="1118" y="1070" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">discussion</text>
+<rect x="1100" y="1205" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="1239" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Edit Profile</text>
+<text x="1118" y="1267" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Update identity and interests</text>
+<rect x="1100" y="1420" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1118" y="1454" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Preferences</text>
+<text x="1118" y="1482" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Notifications, privacy,</text>
+<text x="1118" y="1500" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">accessibility</text>
+<rect x="1510" y="180" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1528" y="214" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Save / Track Loop</text>
+<text x="1528" y="242" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Saved events, resources,</text>
+<text x="1528" y="260" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">announcements</text>
+<rect x="1510" y="425" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1528" y="459" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Prep Loop</text>
+<text x="1528" y="487" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Event -&gt; resource -&gt; study -&gt; AI</text>
+<rect x="1510" y="670" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1528" y="704" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Community Loop</text>
+<text x="1528" y="732" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Question -&gt; reply -&gt; linked</text>
+<text x="1528" y="750" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">context</text>
+<rect x="1510" y="915" rx="24" ry="24" width="250" height="104" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1528" y="949" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Retention Outcome</text>
+<text x="1528" y="977" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Return via reminders, unread</text>
+<text x="1528" y="995" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">updates, resume study</text>
+<rect x="1510" y="1160" rx="24" ry="24" width="250" height="104" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1528" y="1194" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Profile Personalization</text>
+<text x="1528" y="1222" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Edits reshape recommendations</text>
+<text x="1528" y="1240" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">and scope</text>
+<rect x="1840" y="580" rx="24" ry="24" width="250" height="104" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1858" y="614" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Ongoing Member Journey</text>
+<text x="1858" y="642" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">Discover, plan, prepare,</text>
+<text x="1858" y="660" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">discuss, return</text>
+</svg>

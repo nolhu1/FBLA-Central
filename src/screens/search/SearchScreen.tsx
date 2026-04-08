@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 import { AppScreen } from "@/components/common/AppScreen";
-import { GlassCard } from "@/components/cards/GlassCard";
+import { ListItemCard } from "@/components/cards/ListItemCard";
 import { TextField } from "@/components/forms/TextField";
 import { EmptyState } from "@/components/feedback/EmptyState";
 import { useSearchQuery } from "@/store/services/fblaApi";
-import { palette, theme } from "@/theme";
+import { theme } from "@/theme";
 
 export const SearchScreen = ({ navigation }: any) => {
   const [query, setQuery] = useState("");
@@ -24,17 +24,18 @@ export const SearchScreen = ({ navigation }: any) => {
       ) : (
         <View style={styles.column}>
           {data.map((result) => (
-            <GlassCard
+            <ListItemCard
               key={`${result.type}-${result.id}`}
+              eyebrow={result.type}
               title={result.title}
-              subtitle={result.shortSummary}
-              footer={<Text style={styles.meta}>{result.type.toUpperCase()} • {result.relevanceMetadata}</Text>}
+              summary={result.shortSummary}
+              meta={result.relevanceMetadata}
               onPress={() => {
                 if (result.routeTarget === "EventDetail") navigation.navigate("EventDetail", { eventId: result.id });
                 if (result.routeTarget === "ThreadDetail") navigation.navigate("ThreadDetail", { threadId: result.id });
-                if (result.routeTarget === "Resources") navigation.navigate("Resources");
-                if (result.routeTarget === "News") navigation.navigate("News");
-                if (result.routeTarget === "Study") navigation.navigate("Study");
+                if (result.routeTarget === "Resources") navigation.navigate("ResourceDetail", { resourceId: result.id });
+                if (result.routeTarget === "News") navigation.navigate("NewsDetail", { newsPostId: result.id });
+                if (result.routeTarget === "Study") navigation.navigate("StudyTrackDetail", { studyTrackId: result.id });
               }}
             />
           ))}
@@ -47,9 +48,5 @@ export const SearchScreen = ({ navigation }: any) => {
 const styles = StyleSheet.create({
   column: {
     gap: theme.spacing.md
-  },
-  meta: {
-    ...theme.typography.label,
-    color: palette.gold
   }
 });

@@ -1,126 +1,164 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { StyleSheet, View } from "react-native";
 
 import { AppScreen } from "@/components/common/AppScreen";
-import { GlassCard } from "@/components/cards/GlassCard";
-import { SectionHeader } from "@/components/common/SectionHeader";
-import { useGetHomeBundleQuery } from "@/store/services/fblaApi";
-import { formatDateTime } from "@/utils/time";
-import { palette, theme } from "@/theme";
+import { HomeHeader } from "@/components/home/HomeHeader";
+import { HeroPriorityCard } from "@/components/home/HeroPriorityCard";
+import { HomePreviewCard } from "@/components/home/HomePreviewCard";
+import { MomentumCard } from "@/components/home/MomentumCard";
+import { QuickActionButton } from "@/components/home/QuickActionButton";
+import { useAppSelector } from "@/store/hooks";
+import {
+  useGetForumThreadsQuery,
+  useGetHomeBundleQuery,
+  useGetOrganizationsQuery,
+  useGetSocialHubQuery
+} from "@/store/services/fblaApi";
+import {
+  buildHomeContextLine,
+  buildHomeHero,
+  buildMomentumMessage
+} from "@/domain/services/home";
 
 export const HomeScreen = ({ navigation }: any) => {
-  const { data } = useGetHomeBundleQuery();
+  const user = useAppSelector((state) => state.session.user);
+  const { data: bundle } = useGetHomeBundleQuery();
+  const { data: organizations = [] } = useGetOrganizationsQuery();
+  const { data: threads = [] } = useGetForumThreadsQuery();
+  const { data: socialHub } = useGetSocialHubQuery();
+
+  const hero = buildHomeHero(bundle);
+  const contextLine = buildHomeContextLine({ user, organizations, bundle });
+  const socialHighlight = (bundle?.socialHighlights ?? socialHub?.highlights ?? [])[0];
+  const activeThread = (bundle?.communityActivity ?? threads)[0];
+  const secondOpinion = activeThread
+    ? {
+        title: "Need a second opinion?",
+        body: `"${activeThread.title}" is active right now.`,
+        actionLabel: "Open discussion",
+        route: { name: "ThreadDetail", params: { threadId: activeThread.id } }
+      }
+    : buildMomentumMessage({
+        hero,
+        studyFocus: bundle?.studyFocus ?? null,
+        resources: bundle?.recommendedResources ?? [],
+        threads: bundle?.communityActivity ?? [],
+        highlights: bundle?.socialHighlights ?? socialHub?.highlights ?? []
+      });
+  const socialMeta = socialHighlight
+    ? `${socialHighlight.summary ? "Latest highlight" : "Fresh from the community"}`
+    : undefined;
+  const momentumBody = activeThread
+    ? `"${activeThread.title}" is active now.${activeThread.replyCount > 0 ? ` ${activeThread.replyCount} repl${activeThread.replyCount === 1 ? "y" : "ies"}.` : ""}`
+    : secondOpinion.body;
+
+  const openRoute = (route?: { name: string; params?: Record<string, string | undefined> }) => {
+    if (!route) return;
+    navigation.navigate(route.name, route.params);
+  };
 
   return (
     <AppScreen
-      title="Command Center"
-      eyebrow="Personalized member home"
-      subtitle="The app’s connected system in one glance: what matters now, what to study next, where to go, and which updates need your attention."
-      rightAction={<Ionicons name="sparkles-outline" size={22} color={palette.gold} />}
+      title=""
+      scroll={false}
+      includeTopSafeArea={false}
+      showBackButton={false}
+      hideDefaultHeader
     >
-      {data?.nextUp ? (
-        <GlassCard
-          title="Next up"
-          subtitle={data.nextUp.title}
-          footer={<Text style={styles.meta}>{formatDateTime((data.nextUp as any).startTime ?? (data.nextUp as any).publishedAt)}</Text>}
-          onPress={() =>
-            "startTime" in data.nextUp
-              ? navigation.navigate("EventDetail", { eventId: data.nextUp.id })
-              : navigation.navigate("News")
-          }
-        >
-          <Text style={styles.body}>
-            {"description" in data.nextUp ? data.nextUp.description : data.nextUp.summary}
-          </Text>
-        </GlassCard>
-      ) : null}
+      <View style={styles.screen}>
+        <HomeHeader
+          greeting={`Hi${user?.firstName ? `, ${user.firstName}` : ""}`}
+          contextLine={contextLine}
+          onPressProfile={() => navigation.navigate("Profile")}
+          onPressNotifications={() => navigation.navigate("News")}
+          onPressAI={() => navigation.navigate("AI")}
+        />
 
-      <SectionHeader title="My priorities" caption="Rules-based recommendations anchored to your profile, saved items, weak topics, and urgent updates." />
-      <View style={styles.column}>
-        {data?.priorities.map((priority) => (
-          <GlassCard key={priority}>
-            <Text style={styles.priority}>{priority}</Text>
-          </GlassCard>
-        ))}
-      </View>
+        <HeroPriorityCard
+          hero={hero}
+          style={styles.heroCard}
+          onPressPrimary={() => openRoute(hero.primaryRoute)}
+          onPressSecondary={hero.secondaryRoute ? () => openRoute(hero.secondaryRoute) : undefined}
+        />
 
-      {data?.studyFocus ? (
-        <>
-          <SectionHeader title="Study focus" caption="Competition prep should follow naturally from events and saved official resources." />
-          <GlassCard
-            title={data.studyFocus.title}
-            subtitle={data.studyFocus.description}
-            footer={<Text style={styles.meta}>{data.studyFocus.estimatedTotalMinutes} minute sprint</Text>}
-            onPress={() => navigation.navigate("Study")}
-          />
-        </>
-      ) : null}
+        <View style={styles.quickGrid}>
+          <View style={styles.quickItem}>
+            <QuickActionButton icon="calendar-outline" label="Schedule" onPress={() => navigation.navigate("Events")} />
+          </View>
+          <View style={styles.quickItem}>
+            <QuickActionButton icon="newspaper-outline" label="News" onPress={() => navigation.navigate("News")} />
+          </View>
+          <View style={styles.quickItem}>
+            <QuickActionButton icon="document-text-outline" label="Resources" onPress={() => navigation.navigate("Resources")} />
+          </View>
+          <View style={styles.quickItem}>
+            <QuickActionButton icon="sparkles-outline" label="Ask AI" onPress={() => navigation.navigate("AI")} />
+          </View>
+        </View>
 
-      <SectionHeader title="Explore" caption="Secondary systems stay one tap away from the command center." />
-      <View style={styles.grid}>
-        <Pressable style={styles.quickAction} onPress={() => navigation.navigate("Resources")}>
-          <Ionicons name="document-text-outline" size={20} color={palette.gold} />
-          <Text style={styles.quickActionText}>Resources</Text>
-        </Pressable>
-        <Pressable style={styles.quickAction} onPress={() => navigation.navigate("News")}>
-          <Ionicons name="newspaper-outline" size={20} color={palette.gold} />
-          <Text style={styles.quickActionText}>News</Text>
-        </Pressable>
-        <Pressable style={styles.quickAction} onPress={() => navigation.navigate("SocialHub")}>
-          <Ionicons name="globe-outline" size={20} color={palette.gold} />
-          <Text style={styles.quickActionText}>Social Hub</Text>
-        </Pressable>
-        <Pressable style={styles.quickAction} onPress={() => navigation.navigate("AI")}>
-          <Ionicons name="sparkles-outline" size={20} color={palette.gold} />
-          <Text style={styles.quickActionText}>Ask FBLA AI</Text>
-        </Pressable>
-      </View>
-
-      <SectionHeader title="Momentum snapshot" caption="A quick pulse on saved content, study progress, and community participation." />
-      <View style={styles.grid}>
-        <GlassCard title={String(data?.momentumSnapshot.savedEvents ?? 0)} subtitle="Saved events" />
-        <GlassCard title={`${data?.momentumSnapshot.studyProgress ?? 0}%`} subtitle="Study progress" />
-        <GlassCard title={String(data?.momentumSnapshot.savedResources ?? 0)} subtitle="Saved resources" />
-        <GlassCard title={String(data?.momentumSnapshot.discussionParticipation ?? 0)} subtitle="Discussion touches" />
+        <View style={styles.bottomRow}>
+          {socialHighlight ? (
+            <View style={[styles.bottomCard, styles.socialCardWrap]}>
+              <HomePreviewCard
+                eyebrow="FBLA Social"
+                title={socialHighlight.title}
+                summary={socialHighlight.summary}
+                meta={socialMeta ?? "Open Social Hub"}
+                compact
+                style={styles.fillCard}
+                onPress={() => navigation.navigate("SocialHub")}
+              />
+            </View>
+          ) : null}
+          <View style={[styles.bottomCard, styles.momentumCardWrap]}>
+            <MomentumCard
+              title={secondOpinion.title}
+              body={momentumBody}
+              actionLabel={secondOpinion.actionLabel}
+              style={styles.fillCard}
+              onPress={() => openRoute(secondOpinion.route)}
+            />
+          </View>
+        </View>
       </View>
     </AppScreen>
   );
 };
 
 const styles = StyleSheet.create({
-  column: {
-    gap: theme.spacing.md
+  screen: {
+    flex: 1,
+    gap: 10,
+    paddingBottom: 4
   },
-  meta: {
-    ...theme.typography.label,
-    color: palette.gold
+  heroCard: {
+    minHeight: 166
   },
-  body: {
-    ...theme.typography.body,
-    color: palette.mist,
-    lineHeight: 22
-  },
-  priority: {
-    ...theme.typography.body,
-    color: palette.cream,
-    lineHeight: 22
-  },
-  grid: {
+  quickGrid: {
     flexDirection: "row",
-    flexWrap: "wrap",
-    gap: theme.spacing.md
+    gap: 8
   },
-  quickAction: {
-    width: "47%",
-    backgroundColor: "rgba(255,255,255,0.08)",
-    borderRadius: theme.radius.lg,
-    padding: theme.spacing.lg,
-    borderWidth: 1,
-    borderColor: palette.border,
+  quickItem: {
+    flex: 1
+  },
+  bottomRow: {
+    flex: 1,
+    minHeight: 0,
+    flexDirection: "column",
     gap: 10
   },
-  quickActionText: {
-    ...theme.typography.label,
-    color: palette.cream
+  bottomCard: {
+    flex: 1,
+    minHeight: 0,
+    width: "100%"
+  },
+  socialCardWrap: {
+    flex: 0.82
+  },
+  momentumCardWrap: {
+    flex: 1
+  },
+  fillCard: {
+    flex: 1,
+    minHeight: 0
   }
 });

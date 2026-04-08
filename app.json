@@ -17,13 +17,18 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#08111e"
-      }
+      },
+      "package": "com.nolh1.fblacentral"
     },
     "plugins": [
-      "expo-notifications"
+      "expo-notifications",
+      "expo-web-browser"
     ],
     "extra": {
-      "appMode": "demo"
+      "appMode": "demo",
+      "eas": {
+        "projectId": "bb61408b-e007-41ec-861f-cd67aa69e091"
+      }
     }
   }
 }

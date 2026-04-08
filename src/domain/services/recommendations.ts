@@ -25,7 +25,7 @@ export const buildRecommendationBundle = (dataset: DemoDataset): RecommendationB
   const activeWeakTopics = dataset.studyProgress.flatMap((progress) => progress.weakTopics);
   const followedThreads = dataset.forumFollows.map((follow) => follow.threadId);
 
-  const recommendedEvents = [...dataset.events]
+  const recommendedEventIds = [...dataset.events]
     .filter((event) => isUpcoming(event.startTime))
     .sort((a, b) => scoreEvent(b, dataset.user, savedEventIds) - scoreEvent(a, dataset.user, savedEventIds))
     .slice(0, 3)
@@ -101,14 +101,23 @@ export const buildHomeBundle = (dataset: DemoDataset): HomeBundle => {
     nextUp,
     priorities: recommendationBundle.priorities,
     studyFocus,
-    recentAnnouncements: dataset.newsPosts.slice(0, 3),
-    recommendedResources: dataset.resources.filter((resource) =>
-      recommendationBundle.relatedResourceIds.includes(resource.id)
-    ),
-    communityActivity: dataset.forumThreads.filter((thread) =>
-      recommendationBundle.relevantDiscussionIds.includes(thread.id)
-    ),
-    socialHighlights: dataset.socialHighlights.slice(0, 3),
+    recentAnnouncements: [...dataset.newsPosts]
+      .sort((a, b) => {
+        const aPriority = (a.isPinned ? 5 : 0) + (a.priorityLevel === "urgent" ? 4 : a.priorityLevel === "high" ? 3 : a.priorityLevel === "medium" ? 2 : 1);
+        const bPriority = (b.isPinned ? 5 : 0) + (b.priorityLevel === "urgent" ? 4 : b.priorityLevel === "high" ? 3 : b.priorityLevel === "medium" ? 2 : 1);
+        if (bPriority !== aPriority) return bPriority - aPriority;
+        return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+      })
+      .slice(0, 4),
+    recommendedResources: recommendationBundle.relatedResourceIds
+      .map((id) => dataset.resources.find((resource) => resource.id === id))
+      .filter((resource): resource is NonNullable<typeof resource> => Boolean(resource)),
+    communityActivity: [...dataset.forumThreads]
+      .filter((thread) => recommendationBundle.relevantDiscussionIds.includes(thread.id))
+      .sort((a, b) => new Date(b.lastActivityAt).getTime() - new Date(a.lastActivityAt).getTime()),
+    socialHighlights: [...dataset.socialHighlights]
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+      .slice(0, 3),
     momentumSnapshot: {
       savedEvents: dataset.eventSaves.length,
       savedResources: dataset.resourceState.filter((item) => item.isSaved).length,
