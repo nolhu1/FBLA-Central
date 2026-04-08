@@ -286,3 +286,15 @@ Helpful project artifacts already in the repository:
 ## Status
 
 The app is beyond a static prototype: the navigation, feature surfaces, repository abstraction, Firebase integration, and Cloud Functions layer are all in place. The remaining work is primarily operational and launch-focused: production data, deployment configuration, testing, analytics, moderation workflows, and release readiness.
+
+## Resources / links
+FBLA Central source code: https://github.com/nolhu1/FBLA-Central
+React Native: https://reactnative.dev/docs/getting-started
+Expo: https://docs.expo.dev
+TypeScript: https://www.typescriptlang.org/docs/
+Redux Toolkit: https://redux-toolkit.js.org/introduction/getting-started
+RTK Query: https://redux-toolkit.js.org/rtk-query/overview
+Firebase: https://firebase.google.com/docs
+OpenAI Responses API: https://developers.openai.com/api/reference/responses/overview
+
+
